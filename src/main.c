@@ -1,13 +1,13 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
-{
- float a,b,c;
- printf(" Enter the number%f , a\n");
- printf(" Enter the number %f, b\n");
- printf(" Enter the number , %fc\n");
- scanf("%f" , &a);
- scanf("%f" , &b);
- scanf("%f" , &c);
- printf("The result of operation is%f", a+b*c);
- return 0;
-}
+  {
+    int C,K;
+    float F;
+    printf("Enter the temperature in celcius\n");
+    scanf("%d", &C);
+    F =C*9/5+32;
+    K=C+273;
+    printf("Temperature in ⁰F is: %f\n", F);
+    printf("Temperature in Kelwin is: %d\n", K);
+    return 0;
+  }

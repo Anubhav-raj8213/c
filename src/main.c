@@ -1,13 +1,18 @@
 #include<stdio.h>
 int main()
-  {
-    int C,K;
-    float F;
-    printf("Enter the temperature in celcius\n");
-    scanf("%d", &C);
-    F =C*9/5+32;
-    K=C+273;
-    printf("Temperature in ⁰F is: %f\n", F);
-    printf("Temperature in Kelwin is: %d\n", K);
-    return 0;
-  }
+     {
+       int i,j,n,k;
+       printf("Enter the number of terms:\n");
+       scanf("%d", &n);
+       i=1;
+       j=0;
+       k=1;
+       while(i<=n){
+         while(k<=i){
+          j=j+k*k;
+          k++;
+         }
+         i++;
+       }
+       printf("The sum is: %d\n", j);
+     }
